@@ -1,0 +1,43 @@
+﻿:root {
+  font-family: 'Segoe UI', sans-serif;
+  color: #203c35;
+  background: #f5f6f0;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+main { max-width: 1050px; margin: auto; padding: 80px 28px 32px; }
+header { display: flex; justify-content: space-between; align-items: end; gap: 28px; margin-bottom: 48px; }
+.eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 2px; color: #57736a; margin: 0 0 20px; }
+h1 { font-size: clamp(32px, 5vw, 52px); max-width: 620px; line-height: 1.12; letter-spacing: -2px; margin: 0; font-weight: 650; }
+h1 span { color: #dc8a44; }
+.subtitle { color: #63766d; margin: 20px 0 0; line-height: 1.6; }
+button { background: #244e40; color: white; border: 0; border-radius: 10px; padding: 14px 20px; font: inherit; font-size: 14px; font-weight: 600; white-space: nowrap; cursor: pointer; }
+button:hover { background: #163c2e; }
+button:disabled { opacity: .6; cursor: wait; }
+button:focus-visible { outline: 3px solid #bd7939; outline-offset: 4px; }
+.panel { background: white; border: 1px solid #e1e7de; border-radius: 18px; padding: 30px; box-shadow: 0 8px 30px #213e3505; }
+.panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 26px; }
+h2 { font-size: 20px; margin: 0; font-weight: 600; }
+.badge { background: #edf3ea; color: #496742; padding: 7px 12px; border-radius: 20px; font-size: 12px; }
+.animals { list-style: none; margin: 0; padding: 0; }
+.animal { display: flex; align-items: center; gap: 18px; padding: 22px 0; border-top: 1px solid #edf0ea; }
+.avatar { width: 52px; height: 52px; border-radius: 16px; background: #f4e8d6; color: #8d6532; display: grid; place-items: center; font-size: 22px; font-weight: 600; flex-shrink: 0; }
+.animal:nth-child(even) .avatar { background: #e6eee4; color: #56764c; }
+.animal-info { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+h3 { margin: 0 0 6px; font-size: 18px; font-weight: 600; }
+.animal-info p { margin: 0; font-size: 14px; color: #708076; line-height: 1.6; }
+.animal-info p span { padding: 0 6px; }
+.age { font-size: 14px; color: #627467; white-space: nowrap; }
+.message { color: #63766d; padding: 20px 0; line-height: 1.7; }
+.error { color: #a33326; }
+footer { text-align: center; color: #7e8b80; font-size: 12px; margin-top: 30px; }
+@media (max-width: 640px) {
+  main { padding: 40px 18px 24px; }
+  header { align-items: start; flex-direction: column; margin-bottom: 28px; }
+  .panel { padding: 22px 18px; }
+  .animal { gap: 12px; }
+  .avatar { width: 44px; height: 44px; }
+}
